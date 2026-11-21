@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Event</title>
+
+    <link rel="stylesheet" href="../CSS Admin/style.css">
+
+</head>
+
+<body class="admin-body">
+
+<aside class="sidebar">
+
+    <h2>CampusConnect</h2>
+
+    <p class="admin-title">Admin Panel</p>
+
+    <a href="admin-dashboard.html">Dashboard</a>
+
+    <a href="manage-events.html">Events</a>
+
+    <a href="registrations.html">Registrations</a>
+
+    <a href="manage-gallery.html">Gallery</a>
+
+    <a href="manage-users.html">Users</a>
+
+    <a href="index.html">Logout</a>
+
+</aside>
+
+
+<main class="admin-main">
+
+    <h1>Add New Event</h1>
+
+    <section class="admin-form">
+
+        <form id="addEventForm">
+
+            <label>Event Name</label>
+
+            <input type="text"
+                   placeholder="Enter event name">
+
+
+            <label>Category</label>
+
+            <select>
+
+                <option>Technical</option>
+                <option>Cultural</option>
+                <option>Sports</option>
+                <option>Workshop</option>
+
+            </select>
+
+
+            <label>Date</label>
+
+            <input type="date">
+
+
+            <label>Time</label>
+
+            <input type="time">
+
+
+            <label>Venue</label>
+
+            <input type="text"
+                   placeholder="Enter venue">
+
+
+            <label>Description</label>
+
+            <textarea rows="6"
+                      placeholder="Enter event description"></textarea>
+
+
+            <label>Event Image</label>
+
+            <input type="file">
+
+
+            <button type="submit" class="btn">
+                Add Event
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="../AdminJS/script.js"></script>
+</body>
+</html>

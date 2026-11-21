@@ -1,0 +1,764 @@
+/* =====================================================
+   CAMPUSCONNECT - CLIENT CSS
+===================================================== */
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #ffffc3;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.top {
+  background: #e0d8cb;
+  color: #6c4327;
+
+  padding: 20px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top h2 {
+  color: #6c4327;
+}
+
+.nav-links a {
+  color: #6c4327;
+
+  text-decoration: none;
+
+  margin-left: 25px;
+
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #b37346;
+}
+
+.nav-links a.admin-link {
+  display: inline-block;
+  background: #6c4327;
+  color: #ffffc3;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #6c4327;
+  margin-left: 25px;
+  transition: 0.3s ease;
+}
+
+.nav-links a.admin-link:hover {
+  background: #e8b879;
+  color: #6c4327;
+  border-color: #e8b879;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(108, 67, 39, 0.25);
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.hero {
+  height: 500px;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Images/heroimg.jpeg") center / cover no-repeat;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 10%;
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 45px;
+
+  margin: 15px 0;
+
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 18px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+/* HOME BUTTON */
+
+.btn {
+  display: inline-block;
+
+  background: #6c4327;
+
+  color: white;
+
+  padding: 11px 25px;
+
+  border-radius: 25px;
+
+  text-decoration: none;
+
+  border: none;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-top: 15px;
+
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #4d2f1c;
+
+  transform: translateY(-2px);
+}
+
+/* HOME EVENT CATEGORY */
+
+.eventcard {
+  padding: 60px 8%;
+
+  background: #e0d8cb;
+
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 30px;
+
+  margin-top: 20px;
+}
+
+.card {
+  height: 250px;
+
+  width: 220px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  background: #e8b879;
+
+  border-radius: 20px;
+
+  padding: 15px;
+
+  transition: transform 0.2s ease-in;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+
+  height: 160px;
+
+  border-radius: 12px;
+
+  object-fit: cover;
+
+  background-color: #ddd;
+}
+
+.card p {
+  color: #6c4327;
+
+  font-weight: bold;
+
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* UPCOMING EVENTS */
+
+.eventdisp {
+  padding: 60px 8%;
+}
+
+.eventdisp h2 {
+  border-left: 6px solid #6c4327;
+
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+
+  color: #6c4327;
+}
+
+.eventdisp h3 {
+  padding: 12px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 10px;
+
+  border-radius: 8px;
+
+  font-weight: normal;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+  background: #e0d8cb;
+
+  text-align: center;
+
+  padding: 55px 20px;
+}
+
+.page-header h1 {
+  color: #6c4327;
+
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 17px;
+}
+
+/* =========================
+   EVENTS PAGE
+========================= */
+
+.event-controls {
+  padding: 35px 8%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+/* SEARCH */
+
+.search-box {
+  display: flex;
+
+  width: 60%;
+}
+
+.search-box input {
+  width: 100%;
+
+  padding: 13px 18px;
+
+  border: 2px solid #d0c7b8;
+
+  border-radius: 25px 0 0 25px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.search-box input:focus {
+  border-color: #b37346;
+}
+
+.search-box button {
+  width: 55px;
+
+  border: none;
+
+  background: #6c4327;
+
+  color: white;
+
+  border-radius: 0 25px 25px 0;
+
+  cursor: pointer;
+}
+
+/* CATEGORY */
+
+.category-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.category-box label {
+  font-weight: bold;
+
+  color: #6c4327;
+}
+
+.category-box select {
+  padding: 12px 35px 12px 15px;
+
+  border: 2px solid #d0c7b8;
+
+  border-radius: 8px;
+
+  background: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+/* EVENT GRID */
+
+.events {
+  padding: 10px 8% 60px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.event-card {
+  background: #e8b879;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  transition: transform 0.2s ease-in;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+}
+
+.event-card img {
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  background-color: #ddd;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event-info h2 {
+  color: #6c4327;
+
+  margin-bottom: 12px;
+
+  font-size: 21px;
+}
+
+.event-info p {
+  margin-bottom: 8px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   EVENT DETAILS
+========================= */
+
+.details {
+  padding: 60px 8%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 45px;
+
+  align-items: start;
+}
+
+.details > img {
+  width: 100%;
+
+  max-height: 450px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+}
+
+.details-content h2 {
+  color: #6c4327;
+
+  margin-bottom: 20px;
+}
+
+.details-content p {
+  margin-bottom: 12px;
+
+  line-height: 1.6;
+}
+
+.details-content h3 {
+  color: #6c4327;
+
+  margin-top: 25px;
+
+  margin-bottom: 10px;
+}
+
+.details-content ul {
+  padding-left: 20px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+  padding: 60px 8%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.gallery-item {
+  background: #e8b879;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.gallery-item h3 {
+  color: #6c4327;
+
+  margin-top: 12px;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-container {
+  max-width: 700px;
+
+  margin: 50px auto;
+
+  padding: 35px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.form-container form,
+.contact form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.form-container label,
+.contact label {
+  margin-top: 15px;
+
+  margin-bottom: 7px;
+
+  font-weight: bold;
+
+  color: #6c4327;
+}
+
+.form-container input,
+.form-container select,
+.contact input,
+.contact textarea {
+  padding: 13px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #6c4327;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  padding: 60px 10%;
+
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.about h2 {
+  color: #6c4327;
+
+  margin-bottom: 15px;
+
+  margin-top: 30px;
+}
+
+.about p {
+  line-height: 1.7;
+}
+
+.about-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+.about-cards div {
+  background: #e8b879;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  text-align: center;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  padding: 60px 8%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+}
+
+.contact-info h2 {
+  color: #6c4327;
+
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  margin: 20px 0;
+
+  font-size: 17px;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #6c4327;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
+
+  margin-top: 20px;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+/* =====================================================
+   RESPONSIVE CLIENT DESIGN
+===================================================== */
+
+@media (max-width: 900px) {
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-controls {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .details,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .top {
+    padding: 15px 5%;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .nav-links a {
+    margin-left: 7px;
+
+    margin-right: 7px;
+  }
+
+  .hero {
+    height: 450px;
+
+    padding: 0 7%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .page-header h1 {
+    font-size: 30px;
+  }
+
+  .events {
+    grid-template-columns: 1fr;
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+  }
+
+  .event-controls {
+    padding-left: 5%;
+
+    padding-right: 5%;
+  }
+
+  .category-box {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .category-box select {
+    width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .details {
+    padding: 40px 5%;
+  }
+
+  .contact {
+    padding: 40px 5%;
+  }
+}
